@@ -1,37 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/dist/output.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@200;300;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/33d6e1a458.js" crossorigin="anonymous"></script>
+
 </head>
-<body>
 
-  Order Summary
+<body class="h-screen font-redhat">
+    <section class="h-full w-full -z-50 absolute" role="background">
+        <img src="/images/pattern-background-desktop.svg" alt="" class="h-2/3 w-full">
+    </section>
+    <main class="relative w-full h-[calc(100vh-1rem)] flex justify-center items-center">
+        <section class="component shadow-md w-96 rounded-2xl bg-white">
+            <img src="/images/illustration-hero.svg" alt="" class="rounded-t-2xl w-full">
+            <div class=" py-6 px-8 flex flex-col justify-center items-center gap-4">
+                <h1 class="font-black text-xl">Order Summary</h1>
+                <p class="font-medium text-sm text-center text-gray-500 font-extralight">
+                    You can now listen to millions of songs, audiobooks, and podcasts on any
+                    device anywhere you like!
+                </p>
+                <div class="">
+                    <img src="/images/icon-music.svg" alt="" class="">
+                    <h2 class="font-bold">Annual Plan</h2>
+                    <p>$59.99/year</p>
+                    <a href="" class="underline text-xs">Change</a>
+                </div>
+                <a href="#" class="py-2 px-16 bg-purple-700 rounded-md text-sm font-bold text-white shadow-md">Proceed to Payment</a>
+                <a href="#" class="text-gray-500 font-bold text-xs">Cancel Order</a>
+            </div>
+        </section>
+    </main>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/remtaine/">Ben</a>.
+    </footer>
 </body>
 </html>

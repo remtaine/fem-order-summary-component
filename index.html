@@ -11,7 +11,7 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
         .attribution { font-size: 11px; text-align: center; }
-        .attribution a { color: hsl(228, 45%, 44%); }
+        .attribution a { color: hsl(228, 45%, 44%);}
     </style>
 
     <!-- Stylesheet -->
@@ -28,33 +28,36 @@
 </head>
 
 <body class="h-screen font-redhat">
-    <section class="h-full w-full -z-50 absolute" role="background">
-        <img src="/images/pattern-background-desktop.svg" alt="" class="h-2/3 w-full">
+    <section role="background" class="h-full w-full -z-50 absolute  bg-fem-100">
+        <img src="/images/pattern-background-desktop.svg" alt="" class="h-2/3 w-full hidden lg:block">
+        <img src="/images/pattern-background-mobile.svg" alt="" class="block lg:hidden h-2/3 w-full">
     </section>
-    <main class="relative w-full h-[calc(100vh-1rem)] flex justify-center items-center">
-        <section class="component shadow-md w-96 rounded-2xl bg-white">
+    <main class="relative w-full min-h-[calc(100vh-4rem)] sm:min-h-[calc(100vh-3rem)] flex justify-center items-center">
+        <section role="component" class="shadow-md w-96 rounded-2xl bg-white m-4">
             <img src="/images/illustration-hero.svg" alt="" class="rounded-t-2xl w-full">
-            <div class=" py-6 px-8 flex flex-col justify-center items-center gap-4">
+            <div class=" py-6 px-4 md:px-8 flex flex-col justify-center items-center gap-4">
                 <h1 class="font-black text-xl">Order Summary</h1>
-                <p class="font-medium text-sm text-center text-gray-500 font-extralight">
+                <p class="text-sm text-center text-fem-400 font-extralight">
                     You can now listen to millions of songs, audiobooks, and podcasts on any
                     device anywhere you like!
                 </p>
-                <div class="">
-                    <img src="/images/icon-music.svg" alt="" class="">
-                    <h2 class="font-bold">Annual Plan</h2>
-                    <p>$59.99/year</p>
-                    <a href="" class="underline text-xs">Change</a>
+                <div class="flex justify-start items-center w-[90%] sm:w-[75%] gap-4">
+                    <img src="/images/icon-music.svg" alt="" class="flex-shrink-0">
+                    <div class="flex flex-col w-fit gap-x-4 text-sm">
+                        <h2 class="font-bold w-fit">Annual Plan</h2>
+                        <p class="w-fit text-fem-400 font-medium">$59.99/year</p>
+                    </div>
+                    <a href="" class="underline text-xs align-middle ml-auto hover:no-underline text-fem-200 hover:text-fem-600 duration-500">Change</a>
                 </div>
-                <a href="#" class="py-2 px-16 bg-purple-700 rounded-md text-sm font-bold text-white shadow-md">Proceed to Payment</a>
-                <a href="#" class="text-gray-500 font-bold text-xs">Cancel Order</a>
+                <a href="#" class="py-2 px-12 lg:px-16 bg-fem-200 hover:bg-fem-600 rounded-md text-sm font-bold text-fem-100 shadow-lg duration-500">Proceed to Payment</a>
+                <a href="#" class="text-fem-400 font-bold text-xs hover:text-fem-500 duration-500">Cancel Order</a>
             </div>
         </section>
     </main>
 
-    <footer class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://github.com/remtaine/">Ben</a>.
+    <footer class="attribution text-sm m-4">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="hover:underline">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/remtaine/" class="hover:underline">Ben</a>.
     </footer>
 </body>
 </html>

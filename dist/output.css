@@ -516,10 +516,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: calc(100vh - 5rem);
 }
 
-.min-h-\[calc\(100vh-4rem\)\] {
-  min-height: calc(100vh - 4rem);
-}
-
 .w-full {
   width: 100%;
 }
@@ -536,22 +532,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-}
-
-.w-\[80\%\] {
-  width: 80%;
-}
-
-.w-\[75\%\] {
-  width: 75%;
-}
-
-.w-\[85\%\] {
-  width: 85%;
-}
-
-.w-\[95\%\] {
-  width: 95%;
 }
 
 .flex-shrink-0 {
@@ -596,6 +576,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-top-right-radius: 1rem;
 }
 
+.bg-fem-100 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(225 100% 94% / var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -604,16 +589,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-fem-200 {
   --tw-bg-opacity: 1;
   background-color: hsl(245 75% 52% / var(--tw-bg-opacity));
-}
-
-.bg-fem-400 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(224 23% 55% / var(--tw-bg-opacity));
-}
-
-.bg-fem-100 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(225 100% 94% / var(--tw-bg-opacity));
 }
 
 .py-6 {
@@ -679,24 +654,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 500;
 }
 
-.text-gray-500 {
+.text-fem-400 {
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: hsl(224 23% 55% / var(--tw-text-opacity));
 }
 
 .text-fem-200 {
   --tw-text-opacity: 1;
   color: hsl(245 75% 52% / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-fem-400 {
-  --tw-text-opacity: 1;
-  color: hsl(224 23% 55% / var(--tw-text-opacity));
 }
 
 .text-fem-100 {
@@ -753,14 +718,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 640px) {
   .sm\:min-h-\[calc\(100vh-4rem\)\] {
     min-height: calc(100vh - 4rem);
-  }
-
-  .sm\:min-h-\[calc\(100vh-3rem\)\] {
-    min-height: calc(100vh - 3rem);
-  }
-
-  .sm\:w-\[80\%\] {
-    width: 80%;
   }
 
   .sm\:w-\[75\%\] {
